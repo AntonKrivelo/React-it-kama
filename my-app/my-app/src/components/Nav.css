@@ -1,0 +1,15 @@
+.nav {
+    grid-area: nav;
+    background-color: rgba(153, 197, 123, 0.7);
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .nav a {
+    padding: 5px;
+  }
+  
+  .nav :nth-child(5) {
+    margin-top: 15px;
+  }
