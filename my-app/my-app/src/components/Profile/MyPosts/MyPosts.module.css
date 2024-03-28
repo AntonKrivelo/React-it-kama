@@ -1,0 +1,40 @@
+
+.myPosts {
+    padding: 15px;
+  }
+  
+  .textArea {
+    width: 40%;
+    height: 80px
+  }
+  .button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0px 31.8%;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background: #16e45a;
+    box-shadow: 0 5px 0 #1d9437;
+    cursor: pointer;
+  }
+  .button:hover {
+     background: #2fa82b;
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+  }
+  .posts {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .forms {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }

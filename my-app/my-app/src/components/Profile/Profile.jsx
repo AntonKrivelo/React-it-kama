@@ -1,5 +1,8 @@
 import React from "react";
 import classes from "./Profile.module.css";
+import MyPosts from "./MyPosts/MyPosts";
+
+
 
 const Profile = () => {
     return (
@@ -18,13 +21,7 @@ const Profile = () => {
                     <div className={classes.education}> <span> Education:</span> BSU</div>
                 </div>
             </div>
-            <div className={classes.myPosts}>
-                 <div className={classes.posts}>My posts :</div> 
-                  <form className={classes.forms}>
-                      <textarea className={classes.textArea}></textarea>
-                      <button className={classes.button}>Send</button>
-                  </form> 
-            </div>  
+            <MyPosts / >
         </div>  
     );
 }
