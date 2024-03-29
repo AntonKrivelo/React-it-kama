@@ -7,7 +7,8 @@ const Post = (props) => {
             <div className={classes.item}>
                 <img className={classes.avatar} src="https://avatars.mds.yandex.net/get-shedevrum/11511289/cc2855ebcbb411eea6ebbaaee90618f0/orig" />
                 <div className={classes.post}>{props.messages}</div>
-                <div className={classes.like}><button className={classes.btnLikes}><i class="fa fa-heart"></i> {props.counter}</button></div>
+                <div className={classes.like}><button className={classes.btnLikes}><i className="fa fa-heart"></i> {props.counter}</button></div>
+        
             </div>
         </div>
     );

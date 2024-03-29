@@ -1,26 +1,30 @@
 .nav {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 80px;
     grid-area: nav;
-    background-color: rgba(153, 197, 123, 0.7);
+    background: rgb(146, 158, 228);
     padding: 5px;
     margin-top: 5px;
     font-size: 30px;
     font-weight: 600;
     border-radius: 5px;
+    border: 2px solid black;
   }
   .item {
-    padding: 5px;
+    padding: 6px;
     cursor: pointer;
   }
   
   .item:hover {
     color: #FFF;
-    font-size: 35px;
+    font-size: 31px;
   }
   
   .nav :nth-child(5) {
     margin-top: 15px;
   }
+.item i {
+  padding: 5px;
+}

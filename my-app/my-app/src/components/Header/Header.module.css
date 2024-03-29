@@ -1,9 +1,10 @@
 .header {
     grid-area: header;
-    background-color: rgba(224, 96, 96, 0.7);
+    background-color: rgb(146, 158, 228);
     border-radius: 5px;
     padding: 7px;
     border-radius: 5px;
+    border: 2px solid black;
   }
   
   .header img {
