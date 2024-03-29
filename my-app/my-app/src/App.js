@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './components/Nav/Nav';
 import Profile from './components/Profile/Profile';
 import Header from './components/Header/Header';
+import Dialogs from './components/Dialogs/Dialogs';
 
 
 
@@ -11,7 +12,8 @@ const App = () => {
     <div className="app-wrapper">
         <Header />
         <Nav />
-        <Profile />
+        {/* <Profile /> */}
+        <Dialogs />
     </div>
   );
 } 
