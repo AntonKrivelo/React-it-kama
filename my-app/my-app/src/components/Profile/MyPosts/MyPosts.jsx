@@ -10,8 +10,8 @@ const MyPosts = () => {
                     <textarea className={classes.textArea}></textarea>
                     <button className={classes.button}>Send</button>
                 </form> 
-                <Post />
-                <Post />
+                <Post messages="hello my friends, my name is Anton" counter="15" />
+                <Post messages="hi, how are you?" counter="20" />
             </div>  
     );
 }

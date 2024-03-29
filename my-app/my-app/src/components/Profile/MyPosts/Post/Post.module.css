@@ -3,10 +3,11 @@
 }
 .item {
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     gap: 15px;
-    padding: 15px;
+    padding: 10px;
+    margin-top: 20px;
     
 }
 .avatar {
@@ -16,4 +17,15 @@
 }
 .post {
     padding: 5px;
+}
+
+.btnLikes {
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 800;
+}
+.btnLikes:active {
+    background-color: rgba(58, 196, 77, 0.8);
 }
