@@ -28,3 +28,12 @@
 .item i {
   padding: 5px;
 }
+
+.item:active {
+  color: #e7e419;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
