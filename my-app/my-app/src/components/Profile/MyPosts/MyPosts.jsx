@@ -7,7 +7,7 @@ const MyPosts = () => {
             <div className={classes.myPosts}>
                 <div className={classes.posts}>My posts :</div> 
                 <form className={classes.forms}>
-                    <textarea className={classes.textArea}></textarea>
+                    <textarea placeholder="My new post..." className={classes.textArea}></textarea>
                     <button className={classes.button}>Send</button>
                 </form> 
                 <Post messages="hello my friends, my name is Anton" counter="15" />

@@ -16,6 +16,16 @@
     padding: 6px;
     cursor: pointer;
   }
+  .item:active {
+    color: gold;
+  }
+  .item:focus {
+    color: gold;
+  }
+       
+  .item .active {
+    color: gold;
+  }
   
   .item:hover {
     color: #FFF;
@@ -27,10 +37,6 @@
   }
 .item i {
   padding: 5px;
-}
-
-.item:active {
-  color: #e7e419;
 }
 
 a {

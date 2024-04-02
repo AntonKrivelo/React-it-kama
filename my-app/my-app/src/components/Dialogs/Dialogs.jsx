@@ -1,20 +1,28 @@
 import React from "react";
 import classes from "./Dialogs.module.css";
-import Human from "./Human/Human";
+import { NavLink } from "react-router-dom";
 
 
 const Dialogs = () => {
     return (
-        <div className={classes.menu}>
-            <Human name="Antonio K." />
-                <div className={classes.messages}>
-                    <span className={classes.header}>Messages:</span>
-                    <div className={classes.messageBlock}>
-                        <img className={classes.avatar} src="https://avatars.mds.yandex.net/get-shedevrum/11511289/cc2855ebcbb411eea6ebbaaee90618f0/orig" />
-                        <span className={classes.message}>Hi my friends</span>
-                    </div>
-                </div>  
-        </div>
+       <div className={classes.dialogs}>
+            <div className={classes.dialogsItems}>
+                <div className={classes.item + ' ' + classes.active}><img className={classes.avatar} src="https://w7.pngwing.com/pngs/761/651/png-transparent-avatar-cloud-crying-rain-avatars-xmas-giveaway-icon.png"/><NavLink to="dialogs/1">Anton:</NavLink></div>
+                <div className={classes.item}> <img className={classes.avatar} src="https://w7.pngwing.com/pngs/761/651/png-transparent-avatar-cloud-crying-rain-avatars-xmas-giveaway-icon.png"/><NavLink to="dialogs/2">Sveta:</NavLink></div>
+                <div className={classes.item}> <img className={classes.avatar} src="https://w7.pngwing.com/pngs/761/651/png-transparent-avatar-cloud-crying-rain-avatars-xmas-giveaway-icon.png"/><NavLink to="dialogs/3">Nikolays:</NavLink></div>
+                <div className={classes.item}> <img className={classes.avatar} src="https://w7.pngwing.com/pngs/761/651/png-transparent-avatar-cloud-crying-rain-avatars-xmas-giveaway-icon.png"/><NavLink to="dialogs/4">Viktoria:</NavLink></div>
+                <div className={classes.item}> <img className={classes.avatar} src="https://w7.pngwing.com/pngs/761/651/png-transparent-avatar-cloud-crying-rain-avatars-xmas-giveaway-icon.png"/><NavLink to="dialogs/5">Petr:</NavLink></div>
+                <div className={classes.item}> <img className={classes.avatar} src="https://w7.pngwing.com/pngs/761/651/png-transparent-avatar-cloud-crying-rain-avatars-xmas-giveaway-icon.png"/><NavLink to="dialogs/6">Mishka:</NavLink></div>
+            </div>
+            <div className={classes.messages}>
+                <div className={classes.message}>Lorem, ipsum dolor sit amet consectetur adipisicing elnt naimi sequi accusantium labor.</div>
+                <div className={classes.message}>Lorem, ipsum dolor sit amet consectetur adipisicing elnt naimi sequi accusantium labor.</div>
+                <div className={classes.message}>Lorem, ipsum dolor sit amet consectetur adipisicing elnt naimi sequi accusantium labor.</div>
+                <div className={classes.message}>Lorem, ipsum dolor sit amet consectetur adipisicing elnt naimi sequi accusantium labor.</div>
+                <div className={classes.message}>Lorem, ipsum dolor sit amet consectetur adipisicing elnt naimi sequi accusantium labor.</div>
+                <div className={classes.message}>Lorem, ipsum dolor sit amet consectetur adipisicing elnt naimi sequi accusantium labor.</div>
+            </div>
+       </div>
     );
 }
 

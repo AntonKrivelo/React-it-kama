@@ -1,0 +1,8 @@
+.content {
+    grid-area: content;
+    background-color: rgb(146, 158, 228);
+    margin-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
