@@ -2,15 +2,10 @@ import React from "react";
 import classes from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
-const MyPosts = () => {
 
+const MyPosts = (props) => {
 
-    let postData = [
-        {message:"hello my friends, my name is Anton", counter:"15", id:1},
-        {message:"hi, how are you?", counter:"20", id:2},
-    ];
-
-    let postElements = postData.map(p => <Post message={p.message} counter={p.counter} id={p.id} />);
+    let postElements = props.postsData.map(p => <Post message={p.message} counter={p.counter} id={p.id} />);
 
     return (
             <div className={classes.myPosts}>
@@ -19,9 +14,7 @@ const MyPosts = () => {
                     <textarea placeholder="My new post..." className={classes.textArea}></textarea>
                     <button className={classes.button}>Send</button>
                 </form> 
-                {/* <Post message={postData[0].message} counter={postData[0].counter} id={postData[0].id} />
-                <Post message={postData[1].message} counter={postData[1].counter} id={postData[1].id} /> */}
-                {postElements}
+                    {postElements}
             </div>  
     );
 }

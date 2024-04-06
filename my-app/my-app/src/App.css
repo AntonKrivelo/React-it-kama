@@ -1,3 +1,7 @@
+html {
+  background-color: rgba(56, 56, 56, 0.788);
+}
+
 .app-wrapper {
   display: grid;
   width: 1400px;
@@ -7,5 +11,6 @@
   grid-template-areas: 
   "header header"
   "nav content";
+  margin-top: 20px;
 }
 
