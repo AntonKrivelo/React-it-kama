@@ -25,7 +25,9 @@ let state = {
             {name: "Sergey", id: 6},
           ],
     },
-
+    citeBar: {
+        
+    },
   };
   
 

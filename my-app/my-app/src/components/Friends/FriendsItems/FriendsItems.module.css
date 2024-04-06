@@ -1,0 +1,25 @@
+.name {
+    font-size: 20px;
+}
+
+.friendsItems {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    margin-top: 5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    padding: 10px;
+}
