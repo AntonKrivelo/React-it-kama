@@ -3,9 +3,9 @@ import classes from "./Nav.module.css";
 import { NavLink } from "react-router-dom";
 import Friends from "../Friends/Friends";
 
-const Nav = (props) => {
 
-   
+const Nav = (props) => {
+    
 
     return (
         <nav className={classes.nav}>
@@ -14,9 +14,7 @@ const Nav = (props) => {
             <div><NavLink to="/news" className={classes.item}><i class="fi fi-rr-calendar"></i>News</NavLink></div> 
             <div><NavLink to="/music" className={classes.item}><i class="fi fi-rr-megaphone"></i>Music</NavLink></div> 
             <div><NavLink to="/settings" className={classes.item}><i class="fi fi-rr-settings"></i>Settings</NavLink></div>
-            <div><Friends /></div>
-            
-            
+            <Friends friendsData={props.state.friendsData} />
         </nav>
     );
 }

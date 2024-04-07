@@ -25,8 +25,12 @@ let state = {
             {name: "Sergey", id: 6},
           ],
     },
-    citeBar: {
-        
+    sideBar: {
+      friendsData: [
+        {name: "Antonio", id: 1},
+        {name: "Viktor", id: 2},
+        {name: "Valera", id: 3},
+      ],
     },
   };
   

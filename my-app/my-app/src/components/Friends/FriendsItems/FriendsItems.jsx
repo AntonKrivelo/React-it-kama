@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./FriendsItems.module.css";
 
+
 const FriendsItems = (props) => {
     return (
         <div className={classes.friendsItems}>

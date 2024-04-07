@@ -1,5 +1,9 @@
-.header {
+.friendsNav {
     padding: 10px;
+    background: rgba(228, 206, 146, 0.856);
+    color: #000;
+    font-size: 30px;
+    border: 1px solid rgb(197, 197, 197);
 }
 
 .friendsItems {
@@ -7,3 +11,4 @@
     display: flex;
     gap: 10px;
 }
+

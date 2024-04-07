@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 50px;
     grid-area: nav;
     background: rgba(228, 206, 146, 0.856);
     padding: 5px;
     margin-top: 5px;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 900;
     border-radius: 5px;
     border: 2px solid black;
   }
