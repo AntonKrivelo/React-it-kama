@@ -4,18 +4,13 @@ import FriendsItems from "./FriendsItems/FriendsItems";
 
 const Friends = (props) => {
 
-    
-    
-
-    let friendsElements = props.friendsData.map(f => <FriendsItems name={f.name} id={f.id} /> );
+let friendsElements = props.friendsData.map(f => <FriendsItems name={f.name} id={f.id} /> );
 
     return (
         <div className={classes.friendsNav}>
-            Friends:
+           <div>Friends:</div> 
             <div className={classes.friendsItems}>
-
                 {friendsElements}
-                
             </div>
         </div>
        

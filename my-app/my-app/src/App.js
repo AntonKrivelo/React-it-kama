@@ -8,17 +8,12 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import FriendsItems from './components/Friends/FriendsItems/FriendsItems';
-import Friends from './components/Friends/Friends';
-
-
 
 
 const App = (props) => {
   
 
   return (
-    <BrowserRouter >
         <div className="app-wrapper">
             <Header />
             <Nav state={props.state.sideBar} />
@@ -30,7 +25,6 @@ const App = (props) => {
               <Route path="/settings" element={<Settings />}/>          
             </Routes>
         </div>
-    </BrowserRouter>
   );
 } 
 

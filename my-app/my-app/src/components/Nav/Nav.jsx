@@ -6,7 +6,6 @@ import Friends from "../Friends/Friends";
 
 const Nav = (props) => {
     
-
     return (
         <nav className={classes.nav}>
             <div><NavLink to="/profile" className={classes.item + ' ' + classes.active}><i className="fi fi-rr-user"></i>Profile</NavLink></div>

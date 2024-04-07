@@ -7,7 +7,7 @@ const ProfileInfo = (props) => {
         <div className={classes.mainContent}>
                 
                 <div className={classes.avatar}>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_G3dnP1UUHCINfAEEv0m_LEqnZ9HEWcEFDQ&usqp=CAU" />
+                    <img src="https://avatars.mds.yandex.net/get-shedevrum/11511289/cc2855ebcbb411eea6ebbaaee90618f0/orig" />
                 </div>
                 <div className={classes.mainInformation}>
                     <div className={classes.name}> <span>Name:</span> {props.name}</div>
