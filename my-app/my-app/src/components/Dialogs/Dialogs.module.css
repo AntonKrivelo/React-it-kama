@@ -36,3 +36,20 @@
     font-size: 20px;
 }
 
+.addMessages {
+    display: flex;
+}
+
+.textAreaMessage {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btnMessage {
+    padding: 15px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+}
