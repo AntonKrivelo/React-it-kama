@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    background-color: rgba(211, 206, 191, 0.856);
+    background: rgba(94, 168, 236, 0.959);
     border-radius: 5px;
     padding: 7px;
     border-radius: 5px;
@@ -12,3 +12,4 @@
     height: 45px;
     border-radius: 100%;
   }
+  

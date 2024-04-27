@@ -1,8 +1,49 @@
 .content {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
     grid-area: content;
-    background-color: rgba(228, 206, 146, 0.479);
+    background: rgba(94, 168, 236, 0.959);
     margin-top: 5px;
     padding-bottom: 20px;
     border-radius: 5px;
     border: 2px solid black;
+    padding: 10px;
   }
+.headerSettings {
+    font-weight: 900;
+    font-size: 25px;
+}  
+.mySettings {
+    font-size: 20px;
+}
+.formSettings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    font-weight: 900;
+}
+.btnLight {
+    padding: 20px;
+    outline: none;
+    background-color: rgb(212, 212, 212);
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.btnLight:hover {
+    background-color: rgb(255, 255, 255);
+}
+.btnDark {
+    padding: 20px;
+    outline: none;
+    background-color: rgba(80, 80, 80, 0.8);
+    color: #FFF;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.btnDark:hover {
+    background-color: rgba(32, 32, 32, 0.8);
+}

@@ -6,24 +6,16 @@ import Message from "./Message";
 
 const Dialogs = (props) => {
 
-
-
     let newMessagesElement = React.createRef();
-
     
     let submitMessage = () => {
         let textMessage = newMessagesElement.current.value;
         alert(textMessage);
     }
 
-
-
-   
     let dialogsElements = props.state.dialogsData.map(d => <DialogItem name={d.name} id={d.id} /> );
     let messagesElements = props.state.messagesData.map(m => <Message message={m.message} id={m.id} /> );
    
-    
-
     return (
        <div className={classes.dialogs}>
             <div className={classes.dialogsItems}>

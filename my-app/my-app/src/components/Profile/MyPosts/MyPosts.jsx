@@ -17,10 +17,10 @@ const MyPosts = (props) => {
     return (
             <div className={classes.myPosts}>
                 <div className={classes.posts}>My posts :</div> 
-                <form className={classes.forms}>
+                <div className={classes.forms}>
                     <textarea ref={newPostElement} placeholder="My new post..." className={classes.textArea}></textarea>
                     <button onClick={addPost} className={classes.button}>Send</button>
-                </form> 
+                </div> 
                     {postElements}
             </div>  
     );

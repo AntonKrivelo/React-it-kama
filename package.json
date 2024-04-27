@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.2.1",
     "react-router-dom": "^6.22.3"
   }
 }

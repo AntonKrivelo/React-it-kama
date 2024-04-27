@@ -1,6 +1,6 @@
 .dialogs {
     display: grid;
-    background-color: rgba(211, 206, 191, 0.856);
+    background: rgba(94, 168, 236, 0.959);
     margin-top: 5px;
     padding-bottom: 20px;
     border-radius: 5px;
@@ -41,15 +41,15 @@
 }
 
 .textAreaMessage {
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .btnMessage {
-    padding: 15px;
+    padding: 5px;
     width: 100px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 900;
 }
