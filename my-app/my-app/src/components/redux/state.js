@@ -8,6 +8,7 @@ let state = {
             {message:"hello my friends, my name is Anton", counter: 18, id:1},
             {message:"hi, how are you?", counter: 20, id:2},
             ],
+        newPostText: "it-kama.com",    
     },
     messagesPage: {
         messagesData: [
@@ -33,6 +34,9 @@ let state = {
         {name: "Valera", id: 3},
       ],
     },
+    newsPage: {
+      newsPageText: 'Page news!',
+    }
   };
   
 
@@ -45,5 +49,11 @@ let state = {
     state.profilePage.postsData.push(newPost);
     rerenderEntireTree(state);
   };
+
+
+  export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+  }
 
 export default state;  

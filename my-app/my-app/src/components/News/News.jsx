@@ -3,10 +3,10 @@ import classes from "./News.module.css";
 
 
 
-const News = () => {
+const News = (props) => {
     return (
         <div className={classes.content}>
-           News page
+           {props.newsPage.newsPageText}
         </div>
     );
     
