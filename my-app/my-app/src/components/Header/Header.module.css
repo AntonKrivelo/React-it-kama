@@ -5,11 +5,25 @@
     padding: 7px;
     border-radius: 5px;
     border: 2px solid black;
+    position: relative;
   }
   
-  .header img {
+  .logo {
     width: 45px;
     height: 45px;
     border-radius: 100%;
   }
+
+  .themeIcon {
+    position: absolute;
+    border-radius: 100%;
+    width: 60px;
+    height: 51px;
+    right: 21px;
+    top: 3px;
+}
+  
+
+  
+
   

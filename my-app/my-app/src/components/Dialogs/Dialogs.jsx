@@ -8,9 +8,15 @@ const Dialogs = (props) => {
 
     let newMessagesElement = React.createRef();
     
+
     let submitMessage = () => {
-        let textMessage = newMessagesElement.current.value;
-        alert(textMessage);
+        props.addMessage();
+        
+    }
+
+    let onMessageChange = () => {
+        let text = newMessagesElement.current.value;
+        props.updateNewMessageText(text);
     }
 
     let dialogsElements = props.state.dialogsData.map(d => <DialogItem name={d.name} id={d.id} /> );
@@ -23,10 +29,10 @@ const Dialogs = (props) => {
             </div>
             <div className={classes.messages}>
                 {messagesElements}
-                <form className={classes.addMessages}>
-                    <textarea ref={newMessagesElement} className={classes.textAreaMessage} placeholder="transfereed message..."></textarea>
+                <div className={classes.addMessages}>
+                    <textarea value={props.newMessageText} onChange={onMessageChange} ref={newMessagesElement} className={classes.textAreaMessage} placeholder="transfereed message..."></textarea>
                     <button onClick={submitMessage} className={classes.btnMessage}>Submit</button>
-                </form>
+                </div>
             </div>
        </div>
     );

@@ -1,14 +1,15 @@
 import { rerenderEntireTree } from "../../render";
 
-
 let state = {
+
+
 
     profilePage: {
         postsData: [
             {message:"hello my friends, my name is Anton", counter: 18, id:1},
             {message:"hi, how are you?", counter: 20, id:2},
             ],
-        newPostText: "it-kama.com",    
+            newPostText: 'Post',
     },
     messagesPage: {
         messagesData: [
@@ -26,6 +27,7 @@ let state = {
             {name: "Andrey", id: 5},
             {name: "Sergey", id: 6},
           ],
+          newMessageText: 'message',
     },
     sideBar: {
       friendsData: [
@@ -36,18 +38,28 @@ let state = {
     },
     newsPage: {
       newsPageText: 'Page news!',
-    }
+    },
+
   };
   
+  
+window.state = state;
 
- export let addPost = (postMessage) => {
+// POSTS ADD
+
+ export let addPost = () => {
+
     let newPost = {
       id: 3,
-      message: postMessage,
+      message: state.profilePage.newPostText,
       counter: 0,
+
     };
+    
     state.profilePage.postsData.push(newPost);
+    state.profilePage.newPostText = '';
     rerenderEntireTree(state);
+
   };
 
 
@@ -55,5 +67,34 @@ let state = {
     state.profilePage.newPostText = newText;
     rerenderEntireTree(state);
   }
+
+// POSTS ADD
+
+
+// MESSAGE ADD 
+
+export let addMessage = () => {
+  let newMessage = {
+    id: 8,
+    message: state.messagesPage.newMessageText,
+  };
+
+  state.messagesPage.messagesData.push(newMessage);
+  state.messagesPage.newMessageText = '';
+  rerenderEntireTree(state);
+
+}
+
+export let updateNewMessageText = (newText) => {
+
+  state.messagesPage.newMessageText = newText;
+  rerenderEntireTree(state);
+
+}
+
+// MESSAGE ADD
+
+
+
 
 export default state;  
