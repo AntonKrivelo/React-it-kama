@@ -40,30 +40,12 @@ import { rerenderEntireTree } from "../../render";
     },
 
     },
-    getState() {
-      return this._state;
-    },
     _callSubscriber() {
       console.log('state changed')
   },
-    addPost () {
-
-      let newPost = {
-        id: 3,
-        message: this._state.profilePage.newPostText,
-        counter: 0,
-      };
-      
-      this._state.profilePage.postsData.push(newPost);
-      this._state.profilePage.newPostText = '';
-      rerenderEntireTree(this._state);
-
+    getState() {
+      return this._state;
     },
-    updateNewPostText(newText) {
-      this._state.profilePage.newPostText = newText;
-      rerenderEntireTree(this._state);
-    },
-
     addMessage() {
       let newMessage = {
         id: 8,
@@ -81,6 +63,23 @@ import { rerenderEntireTree } from "../../render";
 
     },
   
+    dispatch(action) {
+        if (action.type === "ADD-POST") {
+          let newPost = {
+            id: 3,
+            message: this._state.profilePage.newPostText,
+            counter: 0,
+          };
+          this._state.profilePage.postsData.push(newPost);
+          this._state.profilePage.newPostText = '';
+        rerenderEntireTree(this._state);
+      } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+          this._state.profilePage.newPostText = action.newText;
+          rerenderEntireTree(this._state);
+      }
+    },
+
+
   };
 
 

@@ -13,8 +13,8 @@ const Profile = (props) => {
                 <img src="https://s0.rbk.ru/v6_top_pics/media/img/4/04/346843326750044.jpg" />
             </div>
             <ProfileInfo name="Anton K." birthday="29 May" city="Minsk" education="BSU" />
-            <MyPosts postsData={props.profilePage.postsData} addPost={props.addPost} newPostText={props.profilePage.newPostText} 
-            updateNewPostText={props.updateNewPostText}
+            <MyPosts postsData={props.profilePage.postsData} dispatch={props.dispatch} newPostText={props.profilePage.newPostText} 
+            
             />
         </div>  
     );
