@@ -10,13 +10,12 @@ const Dialogs = (props) => {
     
 
     let submitMessage = () => {
-        props.addMessage();
-        
+        props.dispatch({type: "ADD-MESSAGE"});
     }
 
     let onMessageChange = () => {
         let text = newMessagesElement.current.value;
-        props.updateNewMessageText(text);
+        props.dispatch({type: "UPDATE-NEW-MESSAGE-TEXT", newText: text});
     }
 
     let dialogsElements = props.state.dialogsData.map(d => <DialogItem name={d.name} id={d.id} /> );
