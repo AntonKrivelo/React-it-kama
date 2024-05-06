@@ -2,12 +2,12 @@
     display: grid;
     grid-template-columns: 5fr 5fr;
     grid-area: content;
-    background: rgba(94, 168, 236, 0.959);
+    background: rgba(248, 255, 148, 0.959);
     margin-top: 5px;
     padding-bottom: 20px;
     border-radius: 5px;
-    border: 2px solid black;
     padding: 10px;
+    margin: 5px;
   }
 .headerSettings {
     font-weight: 900;

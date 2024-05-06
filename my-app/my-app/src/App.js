@@ -16,6 +16,7 @@ const App = (props) => {
 
   return (
         <div className="app-wrapper">
+          
             <Header />
             <Nav state={props.state.sideBar} />
             <Routes>

@@ -4,13 +4,13 @@
     flex-direction: column;
     gap: 50px;
     grid-area: nav;
-    background: rgba(94, 168, 236, 0.959);
+    background: rgba(248, 255, 148, 0.959);
     padding: 5px;
     margin-top: 5px;
     font-size: 20px;
     font-weight: 900;
     border-radius: 5px;
-    border: 1px solid black;
+    margin: 5px;
   }
   .item {
     padding: 6px;

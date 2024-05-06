@@ -12,7 +12,6 @@ const Header = () => {
           
             </NavLink>            
             
-                <img className={classes.themeIcon} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mrbJ-8sB2YgafvApswm3Rpof9-Jl2_k5QQ&s" />
            
             </header>
             
