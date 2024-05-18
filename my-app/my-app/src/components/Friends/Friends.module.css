@@ -3,7 +3,10 @@
     color: #000;
     font-size: 20px;
 }
-
+.friends {
+    padding-right: 5px;
+    font-size: 21px;
+}
 .friendsItems {
     margin-top: 10px;
     display: flex;

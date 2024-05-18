@@ -8,7 +8,7 @@ let friendsElements = props.friendsData.map(f => <FriendsItems name={f.name} id=
 
     return (
         <div className={classes.friendsNav}>
-           <div>Friends:</div> 
+           <div className={classes.friends}> <i className="fi fi-rr-users"></i>Friends:</div> 
             <div className={classes.friendsItems}>
                 {friendsElements}
             </div>

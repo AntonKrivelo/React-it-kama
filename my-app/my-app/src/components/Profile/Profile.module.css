@@ -1,6 +1,6 @@
   .content {
     grid-area: content;
-    background: rgba(248, 255, 148, 0.959);
+    background: #fc0362;
     margin-top: 5px;
     padding-bottom: 20px;
     border-radius: 5px;

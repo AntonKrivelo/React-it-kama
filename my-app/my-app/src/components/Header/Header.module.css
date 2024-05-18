@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    background: rgba(248, 255, 148, 0.959);
+    background: #fc0362;
     border-radius: 5px;
     padding: 7px;
     border-radius: 5px;
@@ -16,16 +16,13 @@
     top: 2px;
   }
 
-  .themeIcon {
+  .icon {
     position: absolute;
-    border-radius: 100%;
-    width: 60px;
-    height: 51px;
-    right: 21px;
-    top: 3px;
-}
-  
-
-  
-
-  
+    right: 19px;
+    top: 7px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .icon i:hover {
+    color: #FFF;
+  }

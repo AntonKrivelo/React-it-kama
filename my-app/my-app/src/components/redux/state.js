@@ -1,8 +1,6 @@
 import { rerenderEntireTree } from "../../render";
-
-
-  const ADD_POST = "ADD-POST";
-  const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+import messagesReducer from "./messages-reducer";
+import profileReducer from "./profile-reducer";
 
 
 
@@ -32,7 +30,7 @@ import { rerenderEntireTree } from "../../render";
             {name: "Andrey", id: 5},
             {name: "Sergey", id: 6},
           ],
-          newMessageText: 'message',
+          newMessageText: '',
     },
     sideBar: {
       friendsData: [
@@ -55,51 +53,46 @@ import { rerenderEntireTree } from "../../render";
    
   
     dispatch(action) {
-        if (action.type === "ADD-POST") {
-          let newPost = {
-            id: 3,
-            message: this._state.profilePage.newPostText,
-            counter: 0,
-          };
-          this._state.profilePage.postsData.push(newPost);
-          this._state.profilePage.newPostText = '';
-        rerenderEntireTree(this._state);
-      } else if (action.type === "UPDATE-NEW-POST-TEXT") {
-          this._state.profilePage.newPostText = action.newText;
-          rerenderEntireTree(this._state);
-      } else if (action.type === "ADD-MESSAGE") {
-        let newMessage = {
-          id: 8,
-          message: this._state.messagesPage.newMessageText,
-        };
-  
-        this._state.messagesPage.messagesData.push(newMessage);
-        this._state.messagesPage.newMessageText = '';
-        rerenderEntireTree(this._state);
+
+      this._state.profilePage = profileReducer(this._state.profilePage, action);
+      this._state.messagesPage =messagesReducer(this._state.messagesPage, action);
+
+      rerenderEntireTree(this._state);
+
+
+
+      //   if (action.type === "ADD-POST") {
+      //     let newPost = {
+      //       id: 3,
+      //       message: this._state.profilePage.newPostText,
+      //       counter: 0,
+      //     };
+      //     this._state.profilePage.postsData.push(newPost);
+      //     this._state.profilePage.newPostText = '';
+      //   rerenderEntireTree(this._state);
+      // } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+      //     this._state.profilePage.newPostText = action.newText;
+      //     rerenderEntireTree(this._state);
+      // } else if (action.type === "ADD-MESSAGE") {
+      //   let newMessage = {
+      //     id: 8,
+      //     message: this._state.messagesPage.newMessageText,
+      //   };
+      //   this._state.messagesPage.messagesData.push(newMessage);
+      //   this._state.messagesPage.newMessageText = '';
+      //   rerenderEntireTree(this._state);
         
-      } else if (action.type === "UPDATE-NEW-MESSAGE-TEXT") {
-        this._state.messagesPage.newMessageText = action.newText;
-        rerenderEntireTree(this._state);
-      }
+      // } else if (action.type === "UPDATE-NEW-MESSAGE-TEXT") {
+      //   this._state.messagesPage.newMessageText = action.newText;
+      //   rerenderEntireTree(this._state);
+      // }
 
     },
 
 
   };
 
- export const newPostActionCreator = () => {
-    return {
-        type: ADD_POST
-    };
-};
- export const updateNewTextPostActionCreator = (text) => {
-    return {
-        type: UPDATE_NEW_POST_TEXT, newText: text
-    };
-};
-
-
-
+ 
 
 
 window.store = store;

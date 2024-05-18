@@ -7,7 +7,6 @@ import Message from "./Message";
 const Dialogs = (props) => {
 
     let newMessagesElement = React.createRef();
-    
 
     let submitMessage = () => {
         props.dispatch({type: "ADD-MESSAGE"});
@@ -30,7 +29,7 @@ const Dialogs = (props) => {
                 {messagesElements}
                 <div className={classes.addMessages}>
                     <textarea value={props.state.newMessageText} onChange={onMessageChange} ref={newMessagesElement} className={classes.textAreaMessage} placeholder="transfereed message..." />
-                    <button onClick={submitMessage} className={classes.btnMessage}>Submit</button>
+                    <button onClick={submitMessage} className={classes.btnMessage}>Send</button>
                 </div>
             </div>
        </div>

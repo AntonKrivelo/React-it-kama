@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 50px;
     grid-area: nav;
-    background: rgba(248, 255, 148, 0.959);
+    background: #fc0362;
     padding: 5px;
     margin-top: 5px;
     font-size: 20px;
